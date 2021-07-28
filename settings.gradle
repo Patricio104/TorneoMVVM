@@ -1,0 +1,2 @@
+rootProject.name = "Grafica Torneo"
+include ':app'

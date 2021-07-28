@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Grafica Torneo</string>
+    <string name="numero_de_equipos">Numero de equipos</string>
+    <string name="eliminaci_n_simple">Eliminación simple</string>
+    <string name="doble_eliminaci_n">Doble eliminación</string>
+    <string name="aceptar">Aceptar</string>
+</resources>

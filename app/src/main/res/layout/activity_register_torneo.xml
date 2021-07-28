@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/fondo_sports"
+    tools:context=".ui.RegisterTorneo.RegisterTorneoActivity">
+
+    <ImageView
+        android:id="@+id/imgChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/chart"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/white">
+
+            <EditText
+                android:id="@+id/txtNameTorneo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del torneo"
+                android:inputType="text"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioEliminationType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4100BCD4">
+
+                <RadioButton
+                    android:id="@+id/rdSimpleElimination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eliminaci_n_simple"
+                    android:textStyle="bold"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/rdDoubleElimination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/doble_eliminaci_n"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aceptar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
